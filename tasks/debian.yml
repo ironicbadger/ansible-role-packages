@@ -20,6 +20,5 @@
 
 - name: install packages from provided list
   apt: 
-    name: "{{ item }}" 
+    name: "{{ debian_package_list }}" 
     state: present
-  with_items: "{{ debian_package_list }}"

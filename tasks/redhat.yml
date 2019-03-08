@@ -9,5 +9,5 @@
 
 - name: install listed packages
   yum:
-    name: "{{ item }}"
+    name: "{{ full_update_yum_packages }}"
     state: latest
