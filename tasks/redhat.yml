@@ -9,5 +9,5 @@
 
 - name: install listed packages
   yum:
-    name: "{{ full_update_yum_packages }}"
+    name: "{{ redhat_package_list }}"
     state: latest
