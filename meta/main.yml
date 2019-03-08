@@ -1,0 +1,26 @@
+---
+galaxy_info:
+  author: Alex Kretzschmar
+  description: Installs a given package list
+  issue_tracker_url: https://github.com/ironicbadger/ansible-role-packages/issues
+  license: GPLv2
+  min_ansible_version: 2.7
+  platforms:
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: Amazon
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+  categories:
+  - system
+  - web

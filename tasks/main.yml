@@ -1,0 +1,9 @@
+---
+
+- name: install packages on debian systems
+  include: debian.yml
+  when: ansible_os_family == 'Debian'
+
+- name: install packages on redhat systems
+  include: redhat.yml
+  when: ansible_os_family == 'RedHat'

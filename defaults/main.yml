@@ -1,0 +1,9 @@
+---
+
+debian_package_list:
+  - ""
+redhat_package_list:
+  - ""
+
+full_update_apt_packages: False
+full_update_yum_packages: False
