@@ -1,20 +1,11 @@
 ---
 galaxy_info:
   author: Alex Kretzschmar
-  description: Installs a given package list
+  description: Installs a given package list on Debian-based systems (Proxmox)
   issue_tracker_url: https://github.com/ironicbadger/ansible-role-packages/issues
   license: GPLv2
   min_ansible_version: 2.7
   platforms:
-  - name: EL
-    versions:
-    - all
-  - name: Fedora
-    versions:
-    - all
-  - name: Amazon
-    versions:
-    - all
   - name: Ubuntu
     versions:
     - all
@@ -24,3 +15,8 @@ galaxy_info:
   categories:
   - system
   - web
+  galaxy_tags:
+    - debian
+    - proxmox
+    - system
+    - packages

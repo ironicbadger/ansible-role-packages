@@ -1,9 +1,11 @@
 ---
 
-debian_package_list:
-  - ""
-redhat_package_list:
+package_list:
   - ""
 
 full_update_apt_packages: False
-full_update_yum_packages: False
+
+# Declarative mode settings
+packages_declarative_mode: True
+packages_perform_cleanup: False
+packages_state_file: "/root/.installed-packages.txt"

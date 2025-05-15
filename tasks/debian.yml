@@ -1,14 +1,14 @@
 ---
 
-- name: install aptitude
-  apt: 
+- name: Install aptitude
+  apt:
     name: aptitude
     state: present
     force_apt_get: true
     update_cache: yes
     cache_valid_time: 3600
 
-- name: update apt packages
+- name: Update apt packages
   apt:
     name: '*'
     state: latest
@@ -16,9 +16,9 @@
     cache_valid_time: 3600
     autoclean: yes
     autoremove: yes
-  when: full_update_apt_packages
+  when: full_update_apt_packages | bool
 
-- name: install packages from provided list
-  apt: 
-    name: "{{ debian_package_list }}" 
+- name: Install packages from provided list
+  apt:
+    name: "{{ package_list }}"
     state: present
