@@ -45,7 +45,7 @@
 # Store the current package list in the state file
 - name: Write current package list to state file
   copy:
-    content: "{{ current_package_list | join('\n') }}"
+    content: "{{ current_package_list | join('\n') }}\n"
     dest: "{{ packages_state_file }}"
     mode: '0600'
   when: current_package_list | length > 0 and current_package_list[0] != ""
